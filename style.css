@@ -195,16 +195,19 @@ body {
   }
 
   .timeline-scroll {
-    display: block;
-    overflow-x: visible;
-    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 6px 18px;
+    gap: 14px;
   }
 
   .milestone-card {
-    flex: none;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 18px;
+    flex: 0 0 82vw;
+    width: 82vw;
+    max-width: 82vw;
+    margin-bottom: 0;
   }
 
   .milestone-card h3 {
